@@ -1,0 +1,291 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<nav class="desktop-navbar">
+  <a style="text-decoration: none;" href="admin"><h3 class="logo">Beknazar.dev</h3></a>
+  <ul class="desktop-nav">
+    <li><a href="#home">Главная</a></li>
+    <li><a href="#about">О себе</a></li>
+    <li><a href="#projects">Проекты</a></li>
+    <li><a href="#contact">Связаться</a></li>
+    <li class="burger-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-menu">
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+      </svg>
+    </li>
+  </ul>
+</nav>
+<nav class="mobile-navbar">
+      <div class="navbar">
+        <a style="text-decoration: none;" href="admin"><h3 class="logo">Beknazar.dev</h3></a>
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+          <div class="mobile-nav">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О себе</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Связаться</a></li>
+          </div>
+        </div>
+      </div>
+</nav>
+<section id="home" class="hero">
+  <div class="container">
+    <div class="content">
+      <div class="hero-main">
+        <div class="hero-text">
+          <h1>Back-end Python Developer</h1>
+          <img src="{% static 'main/img/waving.1bae5fcfb51082b5c2b4.png' %}" alt="waving_hand">
+          <p>Приветствую, я Бекназар. Бэк-енд разработчик на python из Алматы, Казахстан. 📍</p>
+          <span>
+            <a aria-label="instagram" rel="noreferrer" target="_blank" href="https://www.instagram.com/soltanbekov_beknazar/">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"></path> </g></svg>
+            </a>
+            </a>
+            <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/soltanbkz"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+            </a>
+          </span>
+        </div>
+        <div class="hero-img"></div>
+      </div>
+      <div class="skills">
+        <p>Tech Stack</p>
+        <div class="logos">
+          <ul>
+            <li><img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon"></li>
+            <li><img src="https://skillicons.dev/icons?i=js,react" alt="skill-icon"></li>
+            <li><img src="https://skillicons.dev/icons?i=django,python" alt="skill-icon"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="t898 t898_animate" style="">
+                    <div class="t898__wrapper" style="bottom:45px;right:20px;left:inherit;"><input type="checkbox"
+                            class="t898__btn_input" id="t898__btn_input_439714958">
+                        <label for="t898__btn_input_439714958" class="t898__btn_label" style="border: 2px solid #5730a6;">
+                            <div class="t898__bgimg t-bgimg loaded" bgimgfield="img"
+                                data-original="https://static.tildacdn.com/tild3536-6662-4334-b534-356536663061/261-emoji-smile-outl.gif"
+                                style="background-image: url(&quot;https://static.tildacdn.com/tild3536-6662-4334-b534-356536663061/261-emoji-smile-outl.gif&quot;);">
+                            </div><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                class="t898__icon t898__icon-close" viewBox="0 0 23 23">
+                                <g fillrule="evenodd">
+                                    <path d="M10.314 -3.686H12.314V26.314H10.314z" transform="rotate(-45 11.314 11.314)"></path>
+                                    <path d="M10.314 -3.686H12.314V26.314H10.314z" transform="rotate(45 11.314 11.314)"></path>
+                                </g>
+                            </svg>
+                        </label><span class="t898__hint t-name t-name_xs">contact us</span>
+                        <div class="t898__animated-circle" style="border-color:#afed13;"></div><!-- old soclinks --><a
+                            class="t898__icon t898__icon-whatsapp_wrapper t898__icon_link" href="https://wa.me/+77074880931"
+                            target="_blank" rel="nofollow noopener noreferrer"><span
+                                class="t898__tooltip t-name t-name_xs">WhatsApp</span><svg role="presentation" width="50"
+                                height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 50a25 25 0 100-50 25 25 0 000 50z" fill="#fff"></path>
+                                <path
+                                    d="M26.1 12a12.1 12.1 0 00-10.25 18.53l.29.46-1.22 4.46 4.57-1.2.45.27a12.1 12.1 0 106.16-22.51V12zm6.79 17.22c-.3.85-1.72 1.62-2.41 1.72-.62.1-1.4.14-2.25-.14-.7-.22-1.37-.47-2.03-.77-3.59-1.57-5.93-5.24-6.1-5.48-.19-.24-1.47-1.97-1.47-3.76 0-1.79.93-2.67 1.25-3.03.33-.37.72-.46.96-.46.23 0 .47 0 .68.02.22 0 .52-.09.8.62l1.1 2.7c.1.18.16.4.04.64s-.18.39-.36.6c-.18.21-.38.47-.54.64-.18.18-.36.38-.15.74.2.36.92 1.55 1.98 2.52 1.37 1.23 2.52 1.62 2.88 1.8.35.18.56.15.77-.1.2-.23.9-1.05 1.13-1.42.24-.36.48-.3.8-.18.33.12 2.09 1 2.44 1.18.36.19.6.28.69.43.09.15.09.88-.21 1.73z"
+                                    fill="#27D061"></path>
+                                <path
+                                    d="M25 0a25 25 0 100 50 25 25 0 000-50zm1.03 38.37c-2.42 0-4.8-.6-6.9-1.76l-7.67 2 2.05-7.45a14.3 14.3 0 01-1.93-7.2c0-7.92 6.49-14.38 14.45-14.38a14.4 14.4 0 110 28.79z"
+                                    fill="#27D061"></path>
+                            </svg></a><a class="t898__icon t898__icon-mail_wrapper t898__icon_link"
+                            href="mailto:tabigatkarbayev@icloud.com" target="_blank" rel="nofollow noopener noreferrer"><span
+                                class="t898__tooltip t-name t-name_xs">Mail</span><svg role="presentation" width="50"
+                                height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 43C34.9411 43 43 34.9411 43 25C43 15.0589 34.9411 7 25 7C15.0589 7 7 15.0589 7 25C7 34.9411 15.0589 43 25 43Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M25 0C11.2 0 0 11.2 0 25C0 38.8 11.2 50 25 50C38.8 50 50 38.8 50 25C50 11.2 38.84 0 25 0ZM38.8 14.96L25 27.18L11.2 14.96H38.8ZM9.32 16.68L18.76 25L9.33 33.32V16.68H9.32ZM11.2 35.04L20.63 26.72L24.13 29.87C24.3744 30.0647 24.6776 30.1707 24.99 30.1707C25.3024 30.1707 25.6056 30.0647 25.85 29.87L29.35 26.72L38.78 35.04H11.21H11.2ZM40.66 33.32L31.29 25L40.72 16.68V33.32H40.67H40.66Z"
+                                    fill="#168DE2"></path>
+                            </svg></a><a class="t898__icon t898__icon-phone_wrapper t898__icon_link" href="tel:+77074880931"
+                            target="_blank" rel="nofollow noopener noreferrer"><span
+                                class="t898__tooltip t-name t-name_xs">Phone</span><svg role="presentation" width="50"
+                                height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 0C11.2 0 0 11.2 0 25C0 38.8 11.2 50 25 50C38.8 50 50 38.8 50 25C50 11.2 38.84 0 25 0Z"
+                                    fill="#004D73"></path>
+                                <path
+                                    d="M38.66 34.1001L32.44 27.7801C32.3435 27.6746 32.226 27.5904 32.0952 27.5327C31.9643 27.4751 31.8229 27.4453 31.68 27.4453C31.537 27.4453 31.3956 27.4751 31.2647 27.5327C31.1339 27.5904 31.0165 27.6746 30.92 27.7801L27.5 31.2001C26.81 31.8801 25.79 31.8801 25.1 31.2001L18.74 24.8301C18.5778 24.6751 18.4488 24.4889 18.3606 24.2826C18.2724 24.0764 18.227 23.8544 18.227 23.6301C18.227 23.4058 18.2724 23.1838 18.3606 22.9776C18.4488 22.7713 18.5778 22.5851 18.74 22.4301L22.16 19.0001C22.61 18.5601 22.61 17.9201 22.16 17.4801L15.9 11.3101C15.7943 11.209 15.6695 11.13 15.5329 11.0776C15.3963 11.0253 15.2506 11.0008 15.1045 11.0054C14.9583 11.0101 14.8145 11.0439 14.6815 11.1048C14.5485 11.1657 14.429 11.2525 14.33 11.3601C12.33 13.8101 8.65996 20.6201 18.73 30.9101L18.89 31.0601L19.03 31.2101C29.36 41.3501 36.16 37.6801 38.61 35.6701C39.1 35.2701 39.15 34.5401 38.66 34.1001Z"
+                                    fill="white"></path>
+                            </svg></a><!-- old soclinks -->
+                    </div>
+                </div>
+                <div class="t898__wrapper" style="bottom:45px;right:20px;left:inherit;"><input type="checkbox"
+                        class="t898__btn_input" id="t898__btn_input_439714958"><label for="t898__btn_input_439714958"
+                        class="t898__btn_label" style="border: 2px solid #5730a6;">
+                        <div class="t898__bgimg t-bgimg loaded">
+                            <svg width="40" height="26" viewBox="0 0 73 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M41.4176 12.6533L41.3974 12.6533L41.3726 12.6558C21.2172 14.6713 11.5849 23.5126 6.83894 32.8645C4.47549 37.5217 3.33615 42.2807 2.69256 46.3327C2.37075 48.3587 2.17233 50.2122 2.00802 51.7859C2.00034 51.8595 1.99274 51.9324 1.9852 52.0046C1.83103 53.4831 1.7063 54.6792 1.53408 55.5449C1.36831 56.2366 1.81466 56.7835 2.2737 57.013C2.51334 57.1328 2.80382 57.196 3.0949 57.1439C3.40026 57.0891 3.67998 56.9101 3.85643 56.6013L3.86034 56.5945L3.86404 56.5875C7.35606 50.0026 11.0605 44.2919 16.709 40.3379C22.3455 36.3924 29.9781 34.1562 41.4006 34.6528L41.4114 34.6533H41.4176C41.4175 34.6537 41.4462 34.658 41.5045 34.6904C41.5702 34.7269 41.6463 34.7843 41.7188 34.8568C41.7913 34.9293 41.8487 35.0053 41.8852 35.0711C41.9176 35.1294 41.9219 35.1581 41.9223 35.158V45.1533C41.9223 45.4346 42.0183 45.7287 42.1532 45.9811C42.2907 46.2385 42.4906 46.494 42.7431 46.6876C42.9967 46.882 43.3259 47.0297 43.7046 47.0171C44.0843 47.0044 44.4436 46.833 44.7602 46.5223L71.4354 23.9433C72.0869 23.4416 72.0846 22.4561 71.4284 21.9579L44.7347 0.762847C44.7345 0.76269 44.7343 0.762534 44.7341 0.762377C44.4895 0.567004 44.1766 0.504216 43.9063 0.500211C43.6251 0.496046 43.3253 0.553576 43.0491 0.664043C42.5168 0.876978 41.9223 1.36284 41.9223 2.15328V12.1485C41.9219 12.1485 41.9176 12.1772 41.8852 12.2355C41.8487 12.3012 41.7913 12.3772 41.7188 12.4497C41.6463 12.5222 41.5702 12.5797 41.5045 12.6162C41.4462 12.6486 41.4175 12.6528 41.4176 12.6533Z"
+                                    fill="white" stroke="#333333" />
+                            </svg>
+                        </div><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            class="t898__icon t898__icon-close" viewBox="0 0 23 23">
+                            <g fillrule="evenodd">
+                                <path d="M10.314 -3.686H12.314V26.314H10.314z" transform="rotate(-45 11.314 11.314)"></path>
+                                <path d="M10.314 -3.686H12.314V26.314H10.314z" transform="rotate(45 11.314 11.314)"></path>
+                            </g>
+                        </svg>
+                    </label>
+                    <div class="t898__animated-circle" style="border-color:#afed13;"></div><!-- old soclinks --><a
+                        class="t898__icon t898__icon-whatsapp_wrapper t898__icon_link" href="https://wa.me/77077307480"
+                        target="_blank" rel="nofollow noopener noreferrer"><span
+                            class="t898__tooltip t-name t-name_xs">WhatsApp</span><svg role="presentation" width="50"
+                            height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 50a25 25 0 100-50 25 25 0 000 50z" fill="#fff"></path>
+                            <path
+                                d="M26.1 12a12.1 12.1 0 00-10.25 18.53l.29.46-1.22 4.46 4.57-1.2.45.27a12.1 12.1 0 106.16-22.51V12zm6.79 17.22c-.3.85-1.72 1.62-2.41 1.72-.62.1-1.4.14-2.25-.14-.7-.22-1.37-.47-2.03-.77-3.59-1.57-5.93-5.24-6.1-5.48-.19-.24-1.47-1.97-1.47-3.76 0-1.79.93-2.67 1.25-3.03.33-.37.72-.46.96-.46.23 0 .47 0 .68.02.22 0 .52-.09.8.62l1.1 2.7c.1.18.16.4.04.64s-.18.39-.36.6c-.18.21-.38.47-.54.64-.18.18-.36.38-.15.74.2.36.92 1.55 1.98 2.52 1.37 1.23 2.52 1.62 2.88 1.8.35.18.56.15.77-.1.2-.23.9-1.05 1.13-1.42.24-.36.48-.3.8-.18.33.12 2.09 1 2.44 1.18.36.19.6.28.69.43.09.15.09.88-.21 1.73z"
+                                fill="#27D061"></path>
+                            <path
+                                d="M25 0a25 25 0 100 50 25 25 0 000-50zm1.03 38.37c-2.42 0-4.8-.6-6.9-1.76l-7.67 2 2.05-7.45a14.3 14.3 0 01-1.93-7.2c0-7.92 6.49-14.38 14.45-14.38a14.4 14.4 0 110 28.79z"
+                                fill="#27D061"></path>
+                        </svg></a><a class="t898__icon t898__icon-mail_wrapper t898__icon_link"
+                        href="mailto:soltanbkzbek@gmail.com" target="_blank" rel="nofollow noopener noreferrer"><span
+                            class="t898__tooltip t-name t-name_xs">Mail</span><svg role="presentation" width="50" height="50"
+                            viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25 43C34.9411 43 43 34.9411 43 25C43 15.0589 34.9411 7 25 7C15.0589 7 7 15.0589 7 25C7 34.9411 15.0589 43 25 43Z"
+                                fill="white"></path>
+                            <path
+                                d="M25 0C11.2 0 0 11.2 0 25C0 38.8 11.2 50 25 50C38.8 50 50 38.8 50 25C50 11.2 38.84 0 25 0ZM38.8 14.96L25 27.18L11.2 14.96H38.8ZM9.32 16.68L18.76 25L9.33 33.32V16.68H9.32ZM11.2 35.04L20.63 26.72L24.13 29.87C24.3744 30.0647 24.6776 30.1707 24.99 30.1707C25.3024 30.1707 25.6056 30.0647 25.85 29.87L29.35 26.72L38.78 35.04H11.21H11.2ZM40.66 33.32L31.29 25L40.72 16.68V33.32H40.67H40.66Z"
+                                fill="#168DE2"></path>
+                        </svg></a><a class="t898__icon t898__icon-phone_wrapper t898__icon_link" href="tel:+77472630930"
+                        target="_blank" rel="nofollow noopener noreferrer"><span
+                            class="t898__tooltip t-name t-name_xs">Phone</span><svg role="presentation" width="50" height="50"
+                            viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 0C11.2 0 0 11.2 0 25C0 38.8 11.2 50 25 50C38.8 50 50 38.8 50 25C50 11.2 38.84 0 25 0Z"
+                                fill="#004D73"></path>
+                            <path
+                                d="M38.66 34.1001L32.44 27.7801C32.3435 27.6746 32.226 27.5904 32.0952 27.5327C31.9643 27.4751 31.8229 27.4453 31.68 27.4453C31.537 27.4453 31.3956 27.4751 31.2647 27.5327C31.1339 27.5904 31.0165 27.6746 30.92 27.7801L27.5 31.2001C26.81 31.8801 25.79 31.8801 25.1 31.2001L18.74 24.8301C18.5778 24.6751 18.4488 24.4889 18.3606 24.2826C18.2724 24.0764 18.227 23.8544 18.227 23.6301C18.227 23.4058 18.2724 23.1838 18.3606 22.9776C18.4488 22.7713 18.5778 22.5851 18.74 22.4301L22.16 19.0001C22.61 18.5601 22.61 17.9201 22.16 17.4801L15.9 11.3101C15.7943 11.209 15.6695 11.13 15.5329 11.0776C15.3963 11.0253 15.2506 11.0008 15.1045 11.0054C14.9583 11.0101 14.8145 11.0439 14.6815 11.1048C14.5485 11.1657 14.429 11.2525 14.33 11.3601C12.33 13.8101 8.65996 20.6201 18.73 30.9101L18.89 31.0601L19.03 31.2101C29.36 41.3501 36.16 37.6801 38.61 35.6701C39.1 35.2701 39.15 34.5401 38.66 34.1001Z"
+                                fill="white"></path>
+                        </svg></a><!-- old soclinks -->
+                </div>
+                <input type="checkbox" class="t898__btn_input" id="t898__btn_input_439714958">
+
+</section>
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="img-side">
+        <img src="{% static 'main/img/working-emoji.c5325f52b5be329995a5.png' %}" alt="emoji"class="work-emoji">
+        <img src="{% static 'main/img/about-img.62b47e7f183d4b4e9feb.webp' %}" alt="mee" class="img-side__main-img">
+        <span><img src="{% static 'main/img/text.svg' %}" alt="text"></span>
+      </div>
+      <div class="text-side">
+        <h3>О себе</h3>
+        <h4>Бэк-енд Разработчик <br> из Алматы, Казахстан 📍</h4>
+        <p>Меня зовут Бекназар, и я Python-разработчик, сфокусированный на веб-разработке с использованием Django.<br><br>
+        В данный момент изучаю React с целью стать Full Stack разработчиком</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects">
+  <div class="container">
+    <div class="">
+
+      <div class="row align-items-stretch mt-5 mt-lg-9">
+        {% for el in prices %}
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <div class="product-item light-background-color">
+            <div class="product-media position-relative">
+              <img class="zoom cover" src="{{ el.photo.url }}" alt="">
+              <div class="product-actions position-absolute d-flex justify-content-center w-100" style="bottom: 20px">
+                <a class="d-block icn-circle circle-sm light-background-color light-background-color" href="#"><i class="bi bi-heart icn-xs text-color"></i></a><a class="d-block icn-circle circle-sm light-background-color light-background-color" href="#" style="margin-left: 10px"><i class="bi bi-cart icn-xs text-color"></i></a><a class="d-block icn-circle circle-sm light-background-color light-background-color" href="#" style="margin-left: 10px"><i class="bi bi-eye-fill icn-xs text-color"></i></a>
+              </div>
+              <div class="tag position-absolute rounded green-color text-center" style="padding: 5px 10px; height: 35px; left: 20px; top: 20px">
+                <h6 class="h6 light-text-color">
+                  {{ el.mark}}
+                </h6>
+              </div>
+            </div>
+            <div style="padding: 25px 25px 35px 25px">
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                  <a class="link primary-text-color" href="#">{{ el.service }}</a>
+                </div>
+                <div class="dark-background-color radius-20 d-flex flex-row justify-content-start align-items-center" style="margin-left: 10px; padding: 5px 5px 5px 5px">
+                  <img src="{% static 'main/img/emojione-star.svg' %}" alt=""><small class="small light-text-color" style="margin-left: 5px">4.9</small>
+                </div>
+              </div>
+              <h5 class="h5 text-color" style="margin-top: 10px">
+                {{ el.name }}
+              </h5>
+              <p class="paragraph second-text-color" style="start; margin-top: 10px; font-size: 16px">
+                {{ el.text }}
+              </p>
+              <div class="d-flex" style="margin-top: 10px; padding: 5px 0px">
+                <h5 class="h5 muted-text-color line-through">
+                  {{ el.old_price }}тнг
+                </h5>
+                <h5 class="h5 secondary-text-color-1" style="margin-left: 5px">
+                  {{ el.new_price }}тнг
+                </h5>
+              </div>
+              <a href="https://wa.me/+77074880931"><button class="btn primary-color btn-round btn-outline btn-sm" style="margin-top: 10px"><span class="btn-text">Связаться</span></button></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact__content">
+      <div class="contact__title">
+        <p>Связаться</p>
+        <h3>Не стесняйся! Свяжись со мной! 👇</h3>
+      </div>
+      <div class="contact__icons">
+        <div class="contact__icon-box">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-map-search"><path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path><path d="M9 4v13"></path><path d="M15 7v5"></path><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M20.2 20.2l1.8 1.8"></path></svg></span>
+          <div class="contact__info">
+            <h3>Location</h3>
+            <p>Almaty, Kazakhstan</p>
+          </div>
+        </div>
+        <div class="contact__icon-box">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mail"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg></span>
+          <div class="contact__info">
+            <h3>Mail</h3>
+            <a href="mailto:soltanbkzbek@gmail.com">soltanbkzbek@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact__icon-box">
+            <span>
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </span>
+            <div class="contact__info">
+                <h3>Contact Number</h3>
+                <a href="tel:+7 707 (488) 0931">+7 707 (488) 0931</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="footerc">
+      <h3>Copyright © 2024. All rights are reserved</h3>
+      <div class="footerc__socials">
+        <a aria-label="instagram" rel="noreferrer" target="_blank" href="https://www.instagram.com/soltanbekov_beknazar/"><svg width="30" height="30" viewBox="0 0 24 24" fill="#ffff" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffff"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#fff"></path> </g></svg></a>
+        <a aria-label="github" target="_blank" rel="noreferrer" href="https://github.com/soltanbekov_beknazar"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}
