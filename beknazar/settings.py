@@ -123,7 +123,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "main/static",
 ]
 
-STATIC_ROOT = '/root/Beknazar/beknazar/main/static/'
+STATIC_ROOT = 'static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
