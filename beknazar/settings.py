@@ -122,7 +122,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'main/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "main/static/",
+    BASE_DIR / "static/",
 ]
 
 STATICFILES_FINDERS = [
