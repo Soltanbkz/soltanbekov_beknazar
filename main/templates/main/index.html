@@ -4,41 +4,8 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-<nav class="desktop-navbar">
-  <a style="text-decoration: none;" href="admin"><h3 class="logo">Beknazar.dev</h3></a>
-  <ul class="desktop-nav">
-    <li><a href="#home">Главная</a></li>
-    <li><a href="#about">О себе</a></li>
-    <li><a href="#projects">Проекты</a></li>
-    <li><a href="#contact">Связаться</a></li>
-    <li class="burger-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-menu">
-        <path d="M4 6l16 0"></path>
-        <path d="M4 12l16 0"></path>
-        <path d="M4 18l16 0"></path>
-      </svg>
-    </li>
-  </ul>
-</nav>
-<nav class="mobile-navbar">
-      <div class="navbar">
-        <a style="text-decoration: none;" href="admin"><h3 class="logo">Beknazar.dev</h3></a>
-        <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-          <div class="mobile-nav">
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#about">О себе</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#contact">Связаться</a></li>
-          </div>
-        </div>
-      </div>
-</nav>
+<nav><a href="admin"><h3 class="logo">Beknazar.dev</h3></a><ul><li><a href="#">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li><li><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-menu"><path d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"></path></svg></li></ul></nav>
+<div class="mobile-nav closed-menu"><span class="mobile-burgermenu"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-x"><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg></span><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div>
 <section id="home" class="hero">
   <div class="container">
     <div class="content">

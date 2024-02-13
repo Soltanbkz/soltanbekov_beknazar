@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -160,6 +161,7 @@ nav ul a {
     display: none;
   }
 }
+
 nav ul a:hover {
   color: #147efb;
 }
@@ -983,11 +985,6 @@ footer h3 {
     }
 
     .logo {
-      position: absolute;
-      top: 25px;
-      left: 15px;
-      font-size: 24px;
-      color: #0e2431;
     }
 
     .navbar .mobile-nav li {
@@ -1515,7 +1512,11 @@ img {
     vertical-align: middle;
     border-style: none;
 }
+.ml-1 {
+    margin-left: 10px;
+}
 .product-item {
+
   transition: .5s; }
   .product-item .product-actions {
     opacity: 0; }
@@ -1685,8 +1686,8 @@ img {
 }
 
 .col-lg-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 20%;
+  max-width: 20%;
 }
 
 .mb-5 {
@@ -1702,8 +1703,9 @@ img {
 @media (min-width: 768px) {
   /* Стили для колонки на средних экранах (md) шириной 6 единиц */
   .col-md-6 {
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
+    flex: 0 0 48% !important;
+    max-width: 49% !important;
+    margin-right: 10px
   }
 }
 
