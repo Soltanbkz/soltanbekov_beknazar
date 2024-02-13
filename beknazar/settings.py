@@ -121,7 +121,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
-STATIC_ROOT = '/main/static'
+STATIC_ROOT = '/root/code/project1/soltanbekov_beknazar/main/static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
