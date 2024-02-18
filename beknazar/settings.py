@@ -4,9 +4,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-ki58eefjp)_oh#3#jx@w!c5^+s5wxx_j93p58rw!pf%-kw900%'
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['soltanbekovbeknazar.kz']
+ALLOWED_HOSTS = ['soltanbekovbeknazar.kz', '127.0.0.1']
 
 INSTALLED_APPS = [
     'main',
@@ -85,9 +85,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
-STATIC_ROOT = BASE_DIR / "/root/code/project1/soltanbekov_beknazar/main/static"
+STATIC_ROOT = BASE_DIR / "/main/static"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+CSRF_TRUSTED_ORIGINS =['http://soltanbekovbeknazar.kz', 'http://127.0.0.1']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
